@@ -1,0 +1,17 @@
+<<<<<<< HEAD
+<<<<<<< 7d268a3aa061e5d093a66e007f35d0e1e3a7c377
+# Add any directories, files, or patterns you don't want to be tracked by version control
+=======
+.gradle/2.14.1/taskArtifacts/cache.properties
+app/build/
+captures/SystemInfo_2016.03.11_19.21.37.txt
+captures/SystemInfo_2016.03.11_19.21.33.txt
+.idea/
+AndroidIM-master1.iml
+.gradle/2.8/taskArtifacts/taskArtifacts.bin
+.gradle/
+build/
+>>>>>>> First Commit
+=======
+# Add any directories, files, or patterns you don't want to be tracked by version control
+>>>>>>> 7d268a3aa061e5d093a66e007f35d0e1e3a7c377

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layoutDirection="ltr"
+    >
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageViewleft"
+        android:src="@drawable/chaticion"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#83e3ed"
+        android:layoutDirection="rtl"
+        android:id="@+id/tests"
+        android:padding="5dp"
+        android:layout_toLeftOf="@id/imageViewleft">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large ffText"
+            android:id="@+id/message_entity_right_message"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="19dp"
+            android:layout_marginEnd="19dp"
+            android:textIsSelectable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Small Text"
+            android:paddingRight="10dp"
+            android:id="@+id/message_entity_right_time"
+            android:layout_below="@+id/message_entity_right_message" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"
+            android:id="@+id/message_entity_right_imageview"
+            android:layout_below="@+id/message_entity_right_time"
+            android:layout_alignParentLeft="false"
+            android:adjustViewBounds="true"
+
+            android:scaleType="centerCrop"
+            />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_below="@+id/message_entity_right_time"
+            android:id="@+id/message_entity_Right_progressbar"
+
+
+            android:layout_alignParentLeft="false"
+            android:indeterminate="false" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

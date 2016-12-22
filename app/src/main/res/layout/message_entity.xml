@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:layout_marginTop="20dp">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/chaticion" />
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#f2ed86"
+    android:padding="5dp"
+    android:layout_toRightOf="@+id/imageView">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="455"
+        android:textIsSelectable="true"
+        android:id="@+id/message_entity_message"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small 54"
+        android:id="@+id/message_entity_time"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_below="@+id/message_entity_message"
+        />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:id="@+id/message_entity_imageview"
+            android:layout_below="@+id/message_entity_time"
+            />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_below="@id/message_entity_time"
+            android:id="@+id/message_entity_progressbar"
+ />
+
+</RelativeLayout>
+
+
+
+</RelativeLayout>
